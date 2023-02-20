@@ -6,10 +6,10 @@
 
 # export important file locations
 export CURRENTDIR="$(pwd)"
-export MAINDIRECTORY="/home/anna/Documents/benchmark/XXX" # Set file path for protein
-export scripts_dir="/home/anna/Documents/code/pipeline_scripts" # choose location of scripts
-export protein_file="/home/anna/Documents/benchmark/inputs/XXX_parameterised" # this should be the prm7 and rst7 file name. best as input folder 
-export ligands_folder="/home/anna/Documents/benchmark/inputs/XXX"
+export MAINDIRECTORY="/export/users/finlayclark/tyk2_rbfe/rbfes_tyk2/tyk2" # Set file path for protein
+export scripts_dir="/export/users/finlayclark/tyk2_rbfe/rbfes_tyk2/scripts" # choose location of scripts
+export protein_file="export/users/finlayclark/tyk2_rbfe/rbfes_tyk2/inputs/tyk2_parameterised" # this should be the prm7 and rst7 file name. best as input folder 
+export ligands_folder="/export/users/finlayclark/tyk2_rbfe/rbfes_tyk2/inputs/tyk2/ligands"
 
 # export all execution model files for later scripts
 export lig_file="$MAINDIRECTORY/execution_model/ligands.dat"
@@ -29,10 +29,10 @@ dos2unix "$ana_file"
 # cd $MAINDIRECTORY
 
 # make sure engines etc are sourced correctly
-export PYTHONPATH=export PYTHONPATH="/home/anna/BioSimSpace/python:$PYTHONPATH" # if using a cloned git branch of BSS - otherwise comment out
-export BSS="/home/anna/anaconda3/bin/activate biosimspace-dev" # to use the conda env to make sure sire works correctly - sourced in each sh script
-export amber="/home/anna/amber22/amber.sh" # sourced in each script
-export gromacs="/usr/local/gromacs/bin/GMXRC" # sourced in each script
+export PYTHONPATH=export PYTHONPATH="/export/users/finlayclark/miniconda3/envs/biosimspace-tyk2/bin/python:$PYTHONPATH" # if using a cloned git branch of BSS - otherwise comment out
+export BSS="/export/users/finlayclark/miniconda3/condabin/conda activate biosimspace-tyk2" # to use the conda env to make sure sire works correctly - sourced in each sh script
+export amber="/home/users/common/amber22_rebuild/amber.sh" # sourced in each script
+export gromacs="/home/users/common/Gromacs22.4/bin/GMXRC" # sourced in each script
 
 # sourcing - as needed in the othe sh scripts
 source $BSS
