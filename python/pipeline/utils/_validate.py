@@ -227,7 +227,7 @@ class validate():
         if lig_ff == "sage":
             lig_ff = "openff_unconstrained-2.0.0"
         elif lig_ff == "parsely":
-            lig_ff = "openff_unconstrained-1.3.0"
+            lig_ff = "openff_unconstrained-1.0.0"
         elif lig_ff == "openff":
             lig_ff = "openff_unconstrained-2.0.0"
         
